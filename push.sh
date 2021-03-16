@@ -1,7 +1,7 @@
 shopt -s globstar
 set -e
 
-for dockerfile in **/Dockerfile; do
+for dockerfile in **/*/Dockerfile; do
     tagPath=$(dirname "$dockerfile")
     imagePath=$(dirname "$tagPath")
     tag=$(basename "$tagPath")
