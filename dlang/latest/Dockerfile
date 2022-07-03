@@ -13,7 +13,7 @@ RUN cd ..
 RUN addgroup -S didegroup
 RUN adduser -S dide -G didegroup
 
-ADD https://github.com/Dmunch04/dide-runner/releases/download/v1.0.3/runner /home/dide/runner
+ADD https://github.com/Dmunch04/dide-runner/releases/latest/dide-runner /home/dide/runner
 RUN chmod +x /home/dide/runner
 RUN chown dide /home/dide/runner
 
