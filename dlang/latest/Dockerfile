@@ -1,8 +1,8 @@
 FROM alpine:3.12
-MAINTAINER Daniel Munch "contact@munchii.me"
+MAINTAINER Daniel Munch "daniellmunch@gmail.com"
 
 RUN apk add --update alpine-sdk dmd dub openssl-dev zlib-dev libc6-compat git
-RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing openjdk14
+RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 RUN mkdir libscrypt
 RUN cd libscrypt
