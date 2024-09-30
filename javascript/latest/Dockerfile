@@ -1,7 +1,7 @@
 FROM alpine:3.20
 MAINTAINER Daniel Munch "daniellmunch@gmail.com"
 
-RUN apk add --update alpine-sdk build-base nodejs npm openssl-dev zlib-dev libc6-compat git gcompat
+RUN apk add --update alpine-sdk build-base dmd nodejs npm openssl-dev zlib-dev libc6-compat git gcompat
 RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 RUN mkdir libscrypt
