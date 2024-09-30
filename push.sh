@@ -6,7 +6,7 @@ for dockerfile in **/*/Dockerfile; do
     imagePath=$(dirname "$tagPath")
     tag=$(basename "$tagPath")
     image=$(basename "$imagePath")
-    imageName="munchii/${image}:${tag}"
+    imageName="munchii/dide-${image}:${tag}"
 
     echo
     echo "Pushing $imageName"
